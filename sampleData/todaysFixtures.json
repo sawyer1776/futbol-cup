@@ -1,0 +1,1621 @@
+{
+  "get": "fixtures",
+  "parameters": {
+    "live": "all"
+  },
+  "errors": [],
+  "results": 12,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "fixture": {
+        "id": 1035977,
+        "referee": "Sebastian Krasny, Poland",
+        "timezone": "UTC",
+        "date": "2023-12-18T18:00:00+00:00",
+        "timestamp": 1702922400,
+        "periods": {
+          "first": 1702922400,
+          "second": null
+        },
+        "venue": {
+          "id": 1255,
+          "name": "Stadion Miejski",
+          "city": "Gliwice"
+        },
+        "status": {
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 22
+        }
+      },
+      "league": {
+        "id": 106,
+        "name": "Ekstraklasa",
+        "country": "Poland",
+        "logo": "https://media-4.api-sports.io/football/leagues/106.png",
+        "flag": "https://media-4.api-sports.io/flags/pl.svg",
+        "season": 2023,
+        "round": "Regular Season - 19"
+      },
+      "teams": {
+        "home": {
+          "id": 349,
+          "name": "Piast Gliwice",
+          "logo": "https://media-4.api-sports.io/football/teams/349.png",
+          "winner": null
+        },
+        "away": {
+          "id": 3493,
+          "name": "Stal Mielec",
+          "logo": "https://media-4.api-sports.io/football/teams/3493.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 0
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": []
+    },
+    {
+      "fixture": {
+        "id": 1049920,
+        "referee": "Sebastian Coltescu, Romania",
+        "timezone": "UTC",
+        "date": "2023-12-18T18:00:00+00:00",
+        "timestamp": 1702922400,
+        "periods": {
+          "first": 1702922400,
+          "second": null
+        },
+        "venue": {
+          "id": 1309,
+          "name": "Stadionul Municipal",
+          "city": "Botoşani"
+        },
+        "status": {
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 24
+        }
+      },
+      "league": {
+        "id": 283,
+        "name": "Liga I",
+        "country": "Romania",
+        "logo": "https://media-4.api-sports.io/football/leagues/283.png",
+        "flag": "https://media-4.api-sports.io/flags/ro.svg",
+        "season": 2023,
+        "round": "Regular Season - 20"
+      },
+      "teams": {
+        "home": {
+          "id": 2581,
+          "name": "FC Botosani",
+          "logo": "https://media-4.api-sports.io/football/teams/2581.png",
+          "winner": false
+        },
+        "away": {
+          "id": 635,
+          "name": "Dinamo Bucuresti",
+          "logo": "https://media-4.api-sports.io/football/teams/635.png",
+          "winner": true
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 1
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 8,
+            "extra": null
+          },
+          "team": {
+            "id": 635,
+            "name": "Dinamo Bucuresti",
+            "logo": "https://media-4.api-sports.io/football/teams/635.png"
+          },
+          "player": {
+            "id": 67786,
+            "name": "L. Ghezali"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 21,
+            "extra": null
+          },
+          "team": {
+            "id": 2581,
+            "name": "FC Botosani",
+            "logo": "https://media-4.api-sports.io/football/teams/2581.png"
+          },
+          "player": {
+            "id": 8585,
+            "name": "R. Sadiku"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 23,
+            "extra": null
+          },
+          "team": {
+            "id": 635,
+            "name": "Dinamo Bucuresti",
+            "logo": "https://media-4.api-sports.io/football/teams/635.png"
+          },
+          "player": {
+            "id": null,
+            "name": null
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "id": 1116009,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2023-12-18T18:00:00+00:00",
+        "timestamp": 1702922400,
+        "periods": {
+          "first": 1702922400,
+          "second": null
+        },
+        "venue": {
+          "id": 20182,
+          "name": "Jamhuri Stadium",
+          "city": "Dodoma"
+        },
+        "status": {
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 23
+        }
+      },
+      "league": {
+        "id": 567,
+        "name": "Ligi kuu Bara",
+        "country": "Tanzania",
+        "logo": "https://media-4.api-sports.io/football/leagues/567.png",
+        "flag": "https://media-4.api-sports.io/flags/tz.svg",
+        "season": 2023,
+        "round": "Regular Season - 14"
+      },
+      "teams": {
+        "home": {
+          "id": 14345,
+          "name": "Dodoma Jiji",
+          "logo": "https://media-4.api-sports.io/football/teams/14345.png",
+          "winner": null
+        },
+        "away": {
+          "id": 14347,
+          "name": "Ihefu",
+          "logo": "https://media-4.api-sports.io/football/teams/14347.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 0
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": []
+    },
+    {
+      "fixture": {
+        "id": 1148351,
+        "referee": "Szymon Marciniak, Poland",
+        "timezone": "UTC",
+        "date": "2023-12-18T18:00:00+00:00",
+        "timestamp": 1702922400,
+        "periods": {
+          "first": 1702922400,
+          "second": null
+        },
+        "venue": {
+          "id": 1364,
+          "name": "King Abdullah Sports City",
+          "city": "Jeddah"
+        },
+        "status": {
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 26
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media-4.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2023,
+        "round": "Semi-finals"
+      },
+      "teams": {
+        "home": {
+          "id": 124,
+          "name": "Fluminense",
+          "logo": "https://media-4.api-sports.io/football/teams/124.png",
+          "winner": null
+        },
+        "away": {
+          "id": 1577,
+          "name": "Al Ahly",
+          "logo": "https://media-4.api-sports.io/football/teams/1577.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 0
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": []
+    },
+    {
+      "fixture": {
+        "id": 1037802,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2023-12-18T17:00:00+00:00",
+        "timestamp": 1702918800,
+        "periods": {
+          "first": 1702918800,
+          "second": 1702922400
+        },
+        "venue": {
+          "id": 1254,
+          "name": "Stadion im. Orła Białego",
+          "city": "Legnica"
+        },
+        "status": {
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 64
+        }
+      },
+      "league": {
+        "id": 107,
+        "name": "I Liga",
+        "country": "Poland",
+        "logo": "https://media-4.api-sports.io/football/leagues/107.png",
+        "flag": "https://media-4.api-sports.io/flags/pl.svg",
+        "season": 2023,
+        "round": "Regular Season - 19"
+      },
+      "teams": {
+        "home": {
+          "id": 335,
+          "name": "Miedz Legnica",
+          "logo": "https://media-4.api-sports.io/football/teams/335.png",
+          "winner": true
+        },
+        "away": {
+          "id": 3487,
+          "name": "Nieciecza",
+          "logo": "https://media-4.api-sports.io/football/teams/3487.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 1,
+          "away": 0
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 27,
+            "extra": null
+          },
+          "team": {
+            "id": 335,
+            "name": "Miedz Legnica",
+            "logo": "https://media-4.api-sports.io/football/teams/335.png"
+          },
+          "player": {
+            "id": 40583,
+            "name": "K. Drygas"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 43,
+            "extra": null
+          },
+          "team": {
+            "id": 3487,
+            "name": "Nieciecza",
+            "logo": "https://media-4.api-sports.io/football/teams/3487.png"
+          },
+          "player": {
+            "id": null,
+            "name": "W. Jakubik"
+          },
+          "assist": {
+            "id": 204329,
+            "name": "A. Trubeha"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 55,
+            "extra": null
+          },
+          "team": {
+            "id": 335,
+            "name": "Miedz Legnica",
+            "logo": "https://media-4.api-sports.io/football/teams/335.png"
+          },
+          "player": {
+            "id": 40583,
+            "name": "K. Drygas"
+          },
+          "assist": {
+            "id": 40614,
+            "name": "D. Michalik"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 61,
+            "extra": null
+          },
+          "team": {
+            "id": 3487,
+            "name": "Nieciecza",
+            "logo": "https://media-4.api-sports.io/football/teams/3487.png"
+          },
+          "player": {
+            "id": 63393,
+            "name": "A. Polyarus"
+          },
+          "assist": {
+            "id": null,
+            "name": "J. Branecki"
+          },
+          "type": "subst",
+          "detail": "Substitution 2",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 61,
+            "extra": null
+          },
+          "team": {
+            "id": 3487,
+            "name": "Nieciecza",
+            "logo": "https://media-4.api-sports.io/football/teams/3487.png"
+          },
+          "player": {
+            "id": 261703,
+            "name": "M. Fassbender"
+          },
+          "assist": {
+            "id": 63572,
+            "name": "A. Dombrovskiy"
+          },
+          "type": "subst",
+          "detail": "Substitution 3",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 61,
+            "extra": null
+          },
+          "team": {
+            "id": 3487,
+            "name": "Nieciecza",
+            "logo": "https://media-4.api-sports.io/football/teams/3487.png"
+          },
+          "player": {
+            "id": 40638,
+            "name": "M. Wolski"
+          },
+          "assist": {
+            "id": null,
+            "name": "B. Waclawek"
+          },
+          "type": "subst",
+          "detail": "Substitution 4",
+          "comments": null
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "id": 1050864,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2023-12-18T17:00:00+00:00",
+        "timestamp": 1702918800,
+        "periods": {
+          "first": 1702918800,
+          "second": 1702922400
+        },
+        "venue": {
+          "id": 202,
+          "name": "Stadion Bijeli Brijeg",
+          "city": "Mostar"
+        },
+        "status": {
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 64
+        }
+      },
+      "league": {
+        "id": 315,
+        "name": "Premijer Liga",
+        "country": "Bosnia",
+        "logo": "https://media-4.api-sports.io/football/leagues/315.png",
+        "flag": "https://media-4.api-sports.io/flags/ba.svg",
+        "season": 2023,
+        "round": "Regular Season - 18"
+      },
+      "teams": {
+        "home": {
+          "id": 588,
+          "name": "Zrinjski",
+          "logo": "https://media-4.api-sports.io/football/teams/588.png",
+          "winner": true
+        },
+        "away": {
+          "id": 679,
+          "name": "FK Sarajevo",
+          "logo": "https://media-4.api-sports.io/football/teams/679.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 2,
+          "away": 0
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 27,
+            "extra": null
+          },
+          "team": {
+            "id": 588,
+            "name": "Zrinjski",
+            "logo": "https://media-4.api-sports.io/football/teams/588.png"
+          },
+          "player": {
+            "id": 9020,
+            "name": "N. Bilbija"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 33,
+            "extra": null
+          },
+          "team": {
+            "id": 679,
+            "name": "FK Sarajevo",
+            "logo": "https://media-4.api-sports.io/football/teams/679.png"
+          },
+          "player": {
+            "id": 14721,
+            "name": "A. Hasic"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 35,
+            "extra": null
+          },
+          "team": {
+            "id": 588,
+            "name": "Zrinjski",
+            "logo": "https://media-4.api-sports.io/football/teams/588.png"
+          },
+          "player": {
+            "id": 9020,
+            "name": "N. Bilbija"
+          },
+          "assist": {
+            "id": 9020,
+            "name": "N. Bilbija"
+          },
+          "type": "Goal",
+          "detail": "Missed Penalty",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 40,
+            "extra": null
+          },
+          "team": {
+            "id": 588,
+            "name": "Zrinjski",
+            "logo": "https://media-4.api-sports.io/football/teams/588.png"
+          },
+          "player": {
+            "id": 9020,
+            "name": "N. Bilbija"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 44,
+            "extra": null
+          },
+          "team": {
+            "id": 588,
+            "name": "Zrinjski",
+            "logo": "https://media-4.api-sports.io/football/teams/588.png"
+          },
+          "player": {
+            "id": 45949,
+            "name": "D. Zlomislic"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 51,
+            "extra": null
+          },
+          "team": {
+            "id": 588,
+            "name": "Zrinjski",
+            "logo": "https://media-4.api-sports.io/football/teams/588.png"
+          },
+          "player": {
+            "id": 1319,
+            "name": "M. Cuze"
+          },
+          "assist": {
+            "id": 76898,
+            "name": "J. Corluka"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 54,
+            "extra": null
+          },
+          "team": {
+            "id": 679,
+            "name": "FK Sarajevo",
+            "logo": "https://media-4.api-sports.io/football/teams/679.png"
+          },
+          "player": {
+            "id": 45977,
+            "name": "F. Kyeremeh"
+          },
+          "assist": {
+            "id": 14721,
+            "name": "A. Hasic"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 58,
+            "extra": null
+          },
+          "team": {
+            "id": 679,
+            "name": "FK Sarajevo",
+            "logo": "https://media-4.api-sports.io/football/teams/679.png"
+          },
+          "player": {
+            "id": 45977,
+            "name": "F. Kyeremeh"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 59,
+            "extra": null
+          },
+          "team": {
+            "id": 679,
+            "name": "FK Sarajevo",
+            "logo": "https://media-4.api-sports.io/football/teams/679.png"
+          },
+          "player": {
+            "id": null,
+            "name": null
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "id": 1051532,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2023-12-18T17:00:00+00:00",
+        "timestamp": 1702918800,
+        "periods": {
+          "first": 1702918800,
+          "second": 1702922400
+        },
+        "venue": {
+          "id": 3408,
+          "name": "Nes Tziona Stadium",
+          "city": "Ness Ziona"
+        },
+        "status": {
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 68
+        }
+      },
+      "league": {
+        "id": 382,
+        "name": "Liga Leumit",
+        "country": "Israel",
+        "logo": "https://media-4.api-sports.io/football/leagues/382.png",
+        "flag": "https://media-4.api-sports.io/flags/il.svg",
+        "season": 2023,
+        "round": "Regular Season - 13"
+      },
+      "teams": {
+        "home": {
+          "id": 4499,
+          "name": "Sektzia Nes Tziona",
+          "logo": "https://media-4.api-sports.io/football/teams/4499.png",
+          "winner": true
+        },
+        "away": {
+          "id": 4497,
+          "name": "Hapoel Kfar Saba",
+          "logo": "https://media-4.api-sports.io/football/teams/4497.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 0
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 56,
+            "extra": null
+          },
+          "team": {
+            "id": 4499,
+            "name": "Sektzia Nes Tziona",
+            "logo": "https://media-4.api-sports.io/football/teams/4499.png"
+          },
+          "player": {
+            "id": null,
+            "name": null
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "id": 1051533,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2023-12-18T17:00:00+00:00",
+        "timestamp": 1702918800,
+        "periods": {
+          "first": 1702918800,
+          "second": 1702922400
+        },
+        "venue": {
+          "id": 3403,
+          "name": "Acre Municipal Stadium",
+          "city": "Accre"
+        },
+        "status": {
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 69
+        }
+      },
+      "league": {
+        "id": 382,
+        "name": "Liga Leumit",
+        "country": "Israel",
+        "logo": "https://media-4.api-sports.io/football/leagues/382.png",
+        "flag": "https://media-4.api-sports.io/flags/il.svg",
+        "season": 2023,
+        "round": "Regular Season - 13"
+      },
+      "teams": {
+        "home": {
+          "id": 4482,
+          "name": "Hapoel Acre",
+          "logo": "https://media-4.api-sports.io/football/teams/4482.png",
+          "winner": false
+        },
+        "away": {
+          "id": 19833,
+          "name": "Ihud Bnei Shfaram",
+          "logo": "https://media-4.api-sports.io/football/teams/19833.png",
+          "winner": true
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 1
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 35,
+            "extra": null
+          },
+          "team": {
+            "id": 19833,
+            "name": "Ihud Bnei Shfaram",
+            "logo": "https://media-4.api-sports.io/football/teams/19833.png"
+          },
+          "player": {
+            "id": null,
+            "name": "M. Sheikh Yosef"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "id": 1051535,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2023-12-18T17:00:00+00:00",
+        "timestamp": 1702918800,
+        "periods": {
+          "first": 1702918800,
+          "second": 1702922400
+        },
+        "venue": {
+          "id": 10592,
+          "name": "Bloomfield Stadium",
+          "city": "Tel-Aviv"
+        },
+        "status": {
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 68
+        }
+      },
+      "league": {
+        "id": 382,
+        "name": "Liga Leumit",
+        "country": "Israel",
+        "logo": "https://media-4.api-sports.io/football/leagues/382.png",
+        "flag": "https://media-4.api-sports.io/flags/il.svg",
+        "season": 2023,
+        "round": "Regular Season - 13"
+      },
+      "teams": {
+        "home": {
+          "id": 4508,
+          "name": "Bnei Yehuda",
+          "logo": "https://media-4.api-sports.io/football/teams/4508.png",
+          "winner": true
+        },
+        "away": {
+          "id": 4487,
+          "name": "Hapoel Nazareth Illit",
+          "logo": "https://media-4.api-sports.io/football/teams/4487.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 1,
+          "away": 0
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 14,
+            "extra": null
+          },
+          "team": {
+            "id": 4508,
+            "name": "Bnei Yehuda",
+            "logo": "https://media-4.api-sports.io/football/teams/4508.png"
+          },
+          "player": {
+            "id": 105817,
+            "name": "A. Buzaglo"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "id": 1082476,
+        "referee": "Panagiotis Chatzigeorgiou, Cyprus",
+        "timezone": "UTC",
+        "date": "2023-12-18T17:00:00+00:00",
+        "timestamp": 1702918800,
+        "periods": {
+          "first": 1702918800,
+          "second": 1702922400
+        },
+        "venue": {
+          "id": 20303,
+          "name": "Stadio Peristerona",
+          "city": "Peristerona"
+        },
+        "status": {
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 63
+        }
+      },
+      "league": {
+        "id": 318,
+        "name": "1. Division",
+        "country": "Cyprus",
+        "logo": "https://media-4.api-sports.io/football/leagues/318.png",
+        "flag": "https://media-4.api-sports.io/flags/cy.svg",
+        "season": 2023,
+        "round": "Regular Season - 15"
+      },
+      "teams": {
+        "home": {
+          "id": 3398,
+          "name": "Doxa",
+          "logo": "https://media-4.api-sports.io/football/teams/3398.png",
+          "winner": true
+        },
+        "away": {
+          "id": 3408,
+          "name": "Aris",
+          "logo": "https://media-4.api-sports.io/football/teams/3408.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 2,
+          "away": 0
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 34,
+            "extra": null
+          },
+          "team": {
+            "id": 3398,
+            "name": "Doxa",
+            "logo": "https://media-4.api-sports.io/football/teams/3398.png"
+          },
+          "player": {
+            "id": 50359,
+            "name": "E. Asante"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 45,
+            "extra": 4
+          },
+          "team": {
+            "id": 3398,
+            "name": "Doxa",
+            "logo": "https://media-4.api-sports.io/football/teams/3398.png"
+          },
+          "player": {
+            "id": 20676,
+            "name": "Y. Gomis"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Own Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 46,
+            "extra": null
+          },
+          "team": {
+            "id": 3408,
+            "name": "Aris",
+            "logo": "https://media-4.api-sports.io/football/teams/3408.png"
+          },
+          "player": {
+            "id": 98320,
+            "name": "V. Nikolic"
+          },
+          "assist": {
+            "id": 125646,
+            "name": "K. Struski"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 59,
+            "extra": null
+          },
+          "team": {
+            "id": 3408,
+            "name": "Aris",
+            "logo": "https://media-4.api-sports.io/football/teams/3408.png"
+          },
+          "player": {
+            "id": 318945,
+            "name": "A. Shumansky"
+          },
+          "assist": {
+            "id": 41900,
+            "name": "M. Mayambela"
+          },
+          "type": "subst",
+          "detail": "Substitution 2",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 59,
+            "extra": null
+          },
+          "team": {
+            "id": 3408,
+            "name": "Aris",
+            "logo": "https://media-4.api-sports.io/football/teams/3408.png"
+          },
+          "player": {
+            "id": 15474,
+            "name": "M. Spoljaric"
+          },
+          "assist": {
+            "id": 328647,
+            "name": "M. Brown"
+          },
+          "type": "subst",
+          "detail": "Substitution 3",
+          "comments": null
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "id": 1099968,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2023-12-18T17:00:00+00:00",
+        "timestamp": 1702918800,
+        "periods": {
+          "first": 1702918800,
+          "second": 1702922400
+        },
+        "venue": {
+          "id": 1411,
+          "name": "Stadion na Banovom brdu",
+          "city": "Beograd"
+        },
+        "status": {
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 62
+        }
+      },
+      "league": {
+        "id": 286,
+        "name": "Super Liga",
+        "country": "Serbia",
+        "logo": "https://media-4.api-sports.io/football/leagues/286.png",
+        "flag": "https://media-4.api-sports.io/flags/rs.svg",
+        "season": 2023,
+        "round": "Regular Season - 19"
+      },
+      "teams": {
+        "home": {
+          "id": 2656,
+          "name": "Cukaricki",
+          "logo": "https://media-4.api-sports.io/football/teams/2656.png",
+          "winner": false
+        },
+        "away": {
+          "id": 12316,
+          "name": "IMT Novi Beograd",
+          "logo": "https://media-4.api-sports.io/football/teams/12316.png",
+          "winner": true
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 1
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 36,
+            "extra": null
+          },
+          "team": {
+            "id": 12316,
+            "name": "IMT Novi Beograd",
+            "logo": "https://media-4.api-sports.io/football/teams/12316.png"
+          },
+          "player": {
+            "id": 304009,
+            "name": "M. Delevic"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 40,
+            "extra": null
+          },
+          "team": {
+            "id": 12316,
+            "name": "IMT Novi Beograd",
+            "logo": "https://media-4.api-sports.io/football/teams/12316.png"
+          },
+          "player": {
+            "id": 346700,
+            "name": "M. Lukovic"
+          },
+          "assist": {
+            "id": 412790,
+            "name": "N. Krstic"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "id": 1132456,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2023-12-18T17:00:00+00:00",
+        "timestamp": 1702918800,
+        "periods": {
+          "first": 1702918800,
+          "second": 1702922400
+        },
+        "venue": {
+          "id": null,
+          "name": "Stadio Curva Fiesole - Viola Park",
+          "city": "Bagno a Ripoli"
+        },
+        "status": {
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 64
+        }
+      },
+      "league": {
+        "id": 139,
+        "name": "Serie A Women",
+        "country": "Italy",
+        "logo": "https://media-4.api-sports.io/football/leagues/139.png",
+        "flag": "https://media-4.api-sports.io/flags/it.svg",
+        "season": 2023,
+        "round": "Regular Season - 11"
+      },
+      "teams": {
+        "home": {
+          "id": 1880,
+          "name": "Fiorentina W",
+          "logo": "https://media-4.api-sports.io/football/teams/1880.png",
+          "winner": null
+        },
+        "away": {
+          "id": 7533,
+          "name": "Inter Milano W",
+          "logo": "https://media-4.api-sports.io/football/teams/7533.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 2
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 1
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 2,
+            "extra": null
+          },
+          "team": {
+            "id": 7533,
+            "name": "Inter Milano W",
+            "logo": "https://media-4.api-sports.io/football/teams/7533.png"
+          },
+          "player": {
+            "id": 90075,
+            "name": "M. Cambiaghi"
+          },
+          "assist": {
+            "id": 90060,
+            "name": "A. Bonfantini"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 14,
+            "extra": null
+          },
+          "team": {
+            "id": 7533,
+            "name": "Inter Milano W",
+            "logo": "https://media-4.api-sports.io/football/teams/7533.png"
+          },
+          "player": {
+            "id": 148044,
+            "name": "M. Pandini"
+          },
+          "assist": {
+            "id": 87383,
+            "name": "G. Karchouni"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 45,
+            "extra": 3
+          },
+          "team": {
+            "id": 1880,
+            "name": "Fiorentina W",
+            "logo": "https://media-4.api-sports.io/football/teams/1880.png"
+          },
+          "player": {
+            "id": 68766,
+            "name": "A. Parisi"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 50,
+            "extra": null
+          },
+          "team": {
+            "id": 1880,
+            "name": "Fiorentina W",
+            "logo": "https://media-4.api-sports.io/football/teams/1880.png"
+          },
+          "player": {
+            "id": 102251,
+            "name": "V. Boquete"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 55,
+            "extra": null
+          },
+          "team": {
+            "id": 7533,
+            "name": "Inter Milano W",
+            "logo": "https://media-4.api-sports.io/football/teams/7533.png"
+          },
+          "player": {
+            "id": 68762,
+            "name": "L. Alborghetti"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 56,
+            "extra": null
+          },
+          "team": {
+            "id": 1880,
+            "name": "Fiorentina W",
+            "logo": "https://media-4.api-sports.io/football/teams/1880.png"
+          },
+          "player": {
+            "id": 102251,
+            "name": "V. Boquete"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Penalty",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 58,
+            "extra": null
+          },
+          "team": {
+            "id": 7533,
+            "name": "Inter Milano W",
+            "logo": "https://media-4.api-sports.io/football/teams/7533.png"
+          },
+          "player": {
+            "id": 90075,
+            "name": "M. Cambiaghi"
+          },
+          "assist": {
+            "id": 90060,
+            "name": "A. Bonfantini"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        }
+      ]
+    }
+  ]
+}
