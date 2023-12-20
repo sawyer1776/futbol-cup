@@ -1,76 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Slider from "./Slider";
-
-// console.log("date is ", new Date(1692453600 * 1000).toLocaleDateString());
-
-// const game = {
-//   fixture: {
-//     id: 1062790,
-//     referee: null,
-//     timezone: "UTC",
-//     date: "2023-08-19T14:00:00+00:00",
-//     timestamp: 1692453600,
-//     periods: {
-//       first: 1692453600,
-//       second: 1692457200,
-//     },
-//     venue: {
-//       id: 20345,
-//       name: "Runcorn Linnets' APEC Taxi's Stadium",
-//       city: "Runcorn, Cheshire",
-//     },
-//     status: {
-//       long: "Match Finished",
-//       short: "1H",
-//       elapsed: 24,
-//     },
-//   },
-//   league: {
-//     id: 45,
-//     name: "FA Cup",
-//     country: "England",
-//     logo: "https://media-4.api-sports.io/football/leagues/45.png",
-//     flag: "https://media-4.api-sports.io/flags/gb.svg",
-//     season: 2023,
-//     round: "Preliminary Round",
-//   },
-//   teams: {
-//     home: {
-//       id: 7666,
-//       name: "Runcorn Linnets",
-//       logo: "https://media-4.api-sports.io/football/teams/7666.png",
-//       winner: true,
-//     },
-//     away: {
-//       id: 7749,
-//       name: "Stalybridge Celtic",
-//       logo: "https://media-4.api-sports.io/football/teams/7749.png",
-//       winner: false,
-//     },
-//   },
-//   goals: {
-//     home: 3,
-//     away: 2,
-//   },
-//   score: {
-//     halftime: {
-//       home: null,
-//       away: null,
-//     },
-//     fulltime: {
-//       home: 3,
-//       away: 2,
-//     },
-//     extratime: {
-//       home: null,
-//       away: null,
-//     },
-//     penalty: {
-//       home: null,
-//       away: null,
-//     },
-//   },
-// };
+import { useState, useEffect } from "react";
 
 export default function OneGame({ game, amount }) {
   return (
@@ -123,7 +55,7 @@ export default function OneGame({ game, amount }) {
           </p>
         </div>
       </div>
-      <Slider amount={amount} type={"POS"} />
+      {/* <Slider amount={amount} type={"POS"} /> */}
     </li>
   );
 }

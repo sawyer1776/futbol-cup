@@ -16,7 +16,7 @@ export async function GET(req, res) {
   try {
 
     const intervalId = setInterval(async () => {
-      const games = await fetchGames();
+      // const games = await fetchGames();
       // console.log(games[0].goals)
 
       const data = `data: ${count}\n\n`;
@@ -34,37 +34,8 @@ export async function GET(req, res) {
   return new Response(responseStream.readable, {
     headers: {
       'Content-Type': 'text/event-stream',
-      Connection: 'keep-alive',
+      'Connection': 'keep-alive',
       'Cache-Control': 'no-cache, no-transform',
     },
   });
 }
-
-
-
-// export function GET(req, res) {
-//   // const data = '1';
-//   // const headers = { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', 'Connection': 'keep-alive' };
-//   // const options = { status: 200, statusText: "event stream opened", headers: headers };
-
-//   // return new NextResponse(data, options);
-
-//   // console.log("Getting");
-//   res.setHeader('Content-Type', 'text/event-stream');
-//   res.setHeader('Cache-Control', 'no-cache');
-//   res.setHeader('Connection', 'keep-alive');
-//   res.flushHeaders();
-
-//   //Send an event every second
-//   let count = 0;
-//   const intervalId = setInterval(() => {
-//     res.write(`data: ${count}\n\n`);
-//     count++;
-//   }, 1000);
-
-//   // Stop sending events when the client closes the connection
-//   req.on('close', () => {
-//     clearInterval(intervalId);
-//     res.end();
-//   });
-// }
