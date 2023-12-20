@@ -6,8 +6,10 @@ export default function ClientTest() {
   const [count, setCount] = useState(0);
   useEffect(() => {
     const eventSource = new EventSource("/api");
+    console.log("connected", eventSource);
 
     eventSource.onmessage = (event) => {
+      console.log("event");
       setCount(Number(event.data));
     };
 
