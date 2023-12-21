@@ -25,12 +25,15 @@ const broadcastMessage = (message) => {
 let games = [{ goals: [null, null] }];
 
 setInterval(async () => {
+  if (connections.length === 0) {
+    return;
+  }
   const newGames = await fetchGames();
   if (JSON.stringify(newGames) !== JSON.stringify(games)) {
     broadcastMessage(JSON.stringify(newGames))
     games = newGames;
   }
-}, 2000);
+}, 5000);
 
 // setInterval(() => {
 //   broadcastMessage(message);
@@ -44,9 +47,14 @@ app.get('/current', async (req, res) => {
 
   connections.push(res);
 
+  if (connections.length === 1) {
+    games = await fetchGames();
+  }
+
   res.write(`data: ${JSON.stringify(games)}\n\n`);
 
   req.on('close', () => {
+    console.log('Connection closed');
     connections = connections.filter(conn => conn !== res);
     res.end();
   });
