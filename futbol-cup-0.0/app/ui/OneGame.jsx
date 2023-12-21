@@ -9,14 +9,10 @@ export default function OneGame({ game, amount }) {
     <li>
       <div className="flex gap-2 bg-alt-800 w-96 justify-between items-center p-1 rounded border border-alt-600 ">
         <div className="flex gap-2 items-center justify-center ">
-          <p className="text-right text-sm w-24 ">
-            {`${game.teams.home.name.slice(0, 11)}${
-              game.teams.home.name.length > 8 ? "..." : ""
-            }`}
-          </p>
+          <p className="text-right text-sm w-24 ">{game.teams.home.name}</p>
           <Image
             alt="team logo"
-            className=""
+            className="h-8 w-8 object-contain"
             src={game.teams.home.logo}
             width="32"
             height="32"
@@ -40,7 +36,7 @@ export default function OneGame({ game, amount }) {
           <p className="text-2xl font-bold">{game.goals.away}</p>
           <Image
             alt="team logo"
-            className=""
+            className="h-8 w-8 object-contain"
             src={game.teams.away.logo}
             width="32"
             height="32"
@@ -49,9 +45,7 @@ export default function OneGame({ game, amount }) {
             className="
            text-sm w-24 "
           >
-            {`${game.teams.away.name.slice(0, 11)}${
-              game.teams.away.name.length > 8 ? "..." : ""
-            }`}
+            {game.teams.away.name}
           </p>
         </div>
       </div>

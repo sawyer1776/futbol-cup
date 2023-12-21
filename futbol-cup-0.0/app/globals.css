@@ -17,10 +17,11 @@
 } */
 
 body {
+  background: repeating-linear-gradient(200deg, #020617, #020617 , #011817,  #020617 );
 color: var(--text-color);
-background: linear-gradient(200deg, #020617, #020617 , #011817,  #020617 );
 background-color:#020617;
-height: 100vh;
+height: 100%;
+min-height: 100vh;
 background-repeat: no-repeat;
 display: flex;
 flex-direction: column;

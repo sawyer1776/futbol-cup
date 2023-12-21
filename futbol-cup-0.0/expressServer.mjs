@@ -1,6 +1,10 @@
 import express from 'express';
 import cors from 'cors';
-import 'dotenv/config'
+import 'dotenv/config';
+
+const app = express();
+
+app.use(cors());
 
 const fetchGames = async () => {
   const res = await fetch("http://localhost:3001/response");
@@ -33,18 +37,15 @@ const fetchLiveGames = async () => {
 
 }
 
-const app = express();
-
-app.use(cors());
 let connections = [];
 
 const broadcastMessage = (message) => {
-  connections.forEach((res, i) => {
+  connections.forEach((res,) => {
     res.write(`data: ${message}\n\n`);
   });
 };
 
-let games = [{ goals: [null, null] }];
+let games = {};
 
 setInterval(async () => {
   if (connections.length === 0) {
@@ -67,16 +68,17 @@ app.get('/current', async (req, res) => {
   res.flushHeaders();
 
   connections.push(res);
+  console.log('New connection', connections.length);
 
   if (connections.length === 1) {
     // games = await fetchGames();
     games = await fetchLiveGames();
   }
-  //add .response to games for live games
+
   res.write(`data: ${JSON.stringify(games.response)}\n\n`);
 
   req.on('close', () => {
-    console.log('Connection closed');
+    console.log('Connection closed', connections.length);
     connections = connections.filter(conn => conn !== res);
     res.end();
   });

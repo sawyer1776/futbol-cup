@@ -2,6 +2,7 @@ import Link from "next/link";
 import OneGroup from "../../../ui/OneGroup";
 import OneGame from "../../../ui/OneGame";
 import { fetchGames } from "../../../lib/dataFetching";
+import ClientTest from "@/app/ui/ClientTest";
 
 export default async function TournamentAtId({ params }) {
   const games = await fetchGames();
@@ -10,11 +11,7 @@ export default async function TournamentAtId({ params }) {
       <h1>Group {params.groupId}</h1>
       <OneGroup groupName={params.groupId} />
       <ul className="mt-4 flex gap-2 flex-col justify-center items-center p-2 rounded-md bg-alt-950 border-2 border-alt-800">
-        {games.map((game) => {
-          if (game.league.id === 48) {
-            return <OneGame key={game.fixture.id} game={game} amount={47} />;
-          }
-        })}
+        <ClientTest />
       </ul>
       <ul>
         <li>

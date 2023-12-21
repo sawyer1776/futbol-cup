@@ -4,7 +4,9 @@ import OneGroup from "../../ui/OneGroup";
 export default function TournamentAtId({ params }) {
   return (
     <main>
-      <h1>Tournament {params.tournamentId}</h1>
+      <h1 className="text-xl font-bold mb-4 text-center">
+        {params.tournamentId}
+      </h1>
       <ul className="flex flex-col gap-6 ">
         <li>
           <Link href={`/tournament/${params.tournamentId}/A`}>

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import OneGame from "./OneGame";
 
 export default function ClientTest() {
-  const [count, setCount] = useState([
+  const [games, setGames] = useState([
     {
       fixture: {
         id: 0,
@@ -42,8 +42,7 @@ export default function ClientTest() {
     eventSource.onmessage = (event) => {
       console.log("new event");
       if (event.data !== "undefined") {
-        const test = JSON.parse(event.data);
-        setCount(test);
+        setGames(JSON.parse(event.data));
       }
     };
 
@@ -54,7 +53,7 @@ export default function ClientTest() {
 
   return (
     <>
-      {count.map((game) => (
+      {games.map((game) => (
         <OneGame
           key={game.fixture.id}
           game={game}
