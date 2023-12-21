@@ -46,12 +46,12 @@
         }
       },
       "goals": {
-        "home": 1,
+        "home": 0,
         "away": 0
       },
       "score": {
         "halftime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         },
         "fulltime": {
@@ -87,8 +87,8 @@
         },
         "status": {
           "long": "First Half",
-          "short": "1H",
-          "elapsed": 12
+          "short": "FT",
+          "elapsed": 56
         }
       },
       "league": {
@@ -116,7 +116,7 @@
       },
       "goals": {
         "home": 3,
-        "away": 0
+        "away": 1
       },
       "score": {
         "halftime": {

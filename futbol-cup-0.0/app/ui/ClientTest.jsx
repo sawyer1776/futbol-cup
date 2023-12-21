@@ -19,13 +19,13 @@ export default function ClientTest() {
         home: {
           id: 0,
           name: "Home",
-          logo: "",
+          logo: false,
           winner: null,
         },
         away: {
           id: 0,
           name: "Away",
-          logo: "",
+          logo: false,
           winner: null,
         },
       },
@@ -37,11 +37,11 @@ export default function ClientTest() {
   ]);
   useEffect(() => {
     const eventSource = new EventSource("http://localhost:3002/current");
-    console.log("connected", eventSource);
+    console.log("connected");
 
     eventSource.onmessage = (event) => {
       const test = JSON.parse(event.data);
-      console.log("event", test[0]);
+      console.log("event", event.data);
       setCount(test);
     };
 
@@ -51,16 +51,14 @@ export default function ClientTest() {
   }, []);
 
   return (
-    <main>
-      <ul>
-        {count.map((game) => (
-          <OneGame
-            key={game.fixture.id}
-            game={game}
-            amount={Math.floor(Math.random() * (80 - 20 + 1)) + 20}
-          />
-        ))}
-      </ul>
-    </main>
+    <>
+      {count.map((game) => (
+        <OneGame
+          key={game.fixture.id}
+          game={game}
+          amount={Math.floor(Math.random() * (80 - 20 + 1)) + 20}
+        />
+      ))}
+    </>
   );
 }
