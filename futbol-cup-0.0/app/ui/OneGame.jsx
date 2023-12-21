@@ -55,7 +55,7 @@ export default function OneGame({ game, amount }) {
           </p>
         </div>
       </div>
-      <Slider amount={amount} type={"POS"} />
+      {/* <Slider amount={amount} type={"POS"} /> */}
     </li>
   );
 }

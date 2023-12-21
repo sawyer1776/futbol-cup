@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import 'dotenv/config'
 
 const fetchGames = async () => {
   const res = await fetch("http://localhost:3001/response");
@@ -10,6 +11,27 @@ const fetchGames = async () => {
 
   return gamesRes;
 };
+
+const fetchLiveGames = async () => {
+  console.log('FETCHING LIVE DATA')
+  const url = process.env.API_URL;
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': process.env.X_RAPID_API_KEY,
+      'X-RapidAPI-Host': process.env.X_RAPID_API_HOST
+    }
+  };
+
+  try {
+    const response = await fetch(url, options);
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    console.error(error);
+  }
+
+}
 
 const app = express();
 
@@ -28,16 +50,15 @@ setInterval(async () => {
   if (connections.length === 0) {
     return;
   }
-  const newGames = await fetchGames();
-  if (JSON.stringify(newGames) !== JSON.stringify(games)) {
-    broadcastMessage(JSON.stringify(newGames))
+  let newGames = await fetchLiveGames();
+  // let newGames = await fetchGames();
+  newGames = JSON.stringify(newGames.response);
+  if (newGames !== games) {
+    broadcastMessage(newGames)
     games = newGames;
   }
-}, 5000);
+}, 180000);
 
-// setInterval(() => {
-//   broadcastMessage(message);
-// }, 1000);
 
 app.get('/current', async (req, res) => {
   res.setHeader('Content-Type', 'text/event-stream');
@@ -48,10 +69,11 @@ app.get('/current', async (req, res) => {
   connections.push(res);
 
   if (connections.length === 1) {
-    games = await fetchGames();
+    // games = await fetchGames();
+    games = await fetchLiveGames();
   }
-
-  res.write(`data: ${JSON.stringify(games)}\n\n`);
+  //add .response to games for live games
+  res.write(`data: ${JSON.stringify(games.response)}\n\n`);
 
   req.on('close', () => {
     console.log('Connection closed');
@@ -60,38 +82,14 @@ app.get('/current', async (req, res) => {
   });
 });
 
+app.get('/test', async (req, res) => {
+  try {
+    const result = await fetchLiveGames(); res.send(result);
+  } catch (error) {
+    console.error(error);
+  }
 
-// const newGames = await fetchGames();
-// if (JSON.stringify(newGames) !== JSON.stringify(games)) {
-//   connections.forEach(res => {
-//     res.write(`data: ${JSON.stringify(newGames)}\n\n`);
-//   });
-// }
-
-
-// const writeMsg = async () => {
-//   // console.log('now Games', games)
-//   const gameses = await fetchGames();
-//   res.write(`data: ${JSON.stringify(gameses)}\n\n`);
-
-// }
-
-// writeMsg()
-
-// const intervalId = setInterval(async () => {
-//   try {
-//     writeMsg()
-
-//   } catch (error) {
-//     console.error('Error fetching games:', error);
-//   }
-// }, 10000);
-
-//   req.on('close', () => {
-//     clearInterval(intervalId);
-//     res.end();
-//   });
-// });
+})
 
 app.listen(3002, () => {
   console.log('Server is running on port 3002');

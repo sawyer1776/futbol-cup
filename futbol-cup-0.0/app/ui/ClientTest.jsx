@@ -40,9 +40,11 @@ export default function ClientTest() {
     console.log("connected");
 
     eventSource.onmessage = (event) => {
-      const test = JSON.parse(event.data);
-      console.log("event", event.data);
-      setCount(test);
+      console.log("new event");
+      if (event.data !== "undefined") {
+        const test = JSON.parse(event.data);
+        setCount(test);
+      }
     };
 
     return () => {
